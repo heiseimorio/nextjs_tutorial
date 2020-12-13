@@ -1,14 +1,20 @@
+import Head from 'next/head'
 import Link from 'next/link'
+import Layout from '../../components/layout'
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
+
       <h1>Frist Post</h1>
       <h2>
-        <Link href="/">
+        {/* <Link href="/">
           <a>Back to home</a>
-        </Link>
+        </Link> */}
       </h2>
-    </>
+    </Layout>
   )
 }
